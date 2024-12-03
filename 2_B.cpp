@@ -6,21 +6,21 @@ using namespace std;
 class A{
     int i, j;
     public:
-    A() { i = 1; j = 2; }
+    A() { i = 1; j = 2; } // Constractor
     void showA(){ cout << i << " " << j << endl; }
 };
 
 class B: public A{
     int k, l;
     public:
-    B() { k = 3; l = 4; }
+    B() { k = 3; l = 4; } // Constractor
     void showB(){ cout << k << " " << l << endl; }
 };
 
 class C: public B{
     int m, n;
     public:
-    C() { m = 5; n = 6; }
+    C() { m = 5; n = 6; } // Constractor
     void showC(){ cout << m << " " << n << endl; }
 };
 
