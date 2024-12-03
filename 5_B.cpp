@@ -1,5 +1,5 @@
 /*
-    5-B. Constrct the following output using virtual function.
+    5-B. Construct the following output using virtual function.
     Output:
     Vehicle Cholena
     Bus o Cholena
