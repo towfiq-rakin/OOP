@@ -1,3 +1,11 @@
+/*
+    For Bangladesh Railway, build a program that will help the customer in online ticket reservation.
+    You have to maintain data hiding to ensure security and exception handling.
+    (Hint: The ticket may have seat number, coach number, quantity, price, time & date.
+    Please take input from the user in runtime. Price will be calculated accordding to the quantity of seat. )
+*/
+
+
 #include <iostream>
 #include <string>
 using namespace std;
@@ -11,7 +19,7 @@ class ticket{
         string date;
         double price;
     public:
-        ticket(){
+        ticket(){ // Constractor
             cout << "Enter the details of ticket: "<<endl;
             cout << "Enter the quantity: ";
             cin >> quantity;
@@ -26,7 +34,7 @@ class ticket{
             cout << "Enter the time: ";
             cin >> time;
         }
-        void display(){
+        void display(){ // Show the details of the ticket
             cout << "Ticket details: "<<endl;
             cout << "Quantity: "<<quantity<<endl;
             cout << "Seat number: ";
@@ -38,7 +46,7 @@ class ticket{
             cout << "Date: "<<date<<endl;
             cout << "Time: "<<time<<endl;
         }
-        double Price(){
+        double Price(){ // Price Calculation
             if(coach == "AC"){
                 price = 1000 * quantity;
             }else{
